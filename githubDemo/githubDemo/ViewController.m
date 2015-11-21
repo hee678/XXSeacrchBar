@@ -26,8 +26,7 @@
     NSLog(@"self.view = %@",NSStringFromCGRect(self.view.frame));
     NSLog(@"self.navigationBar = %@",NSStringFromCGRect(self.navigationController.navigationBar.frame));
     NSLog(@"statusBarFrame = %@",NSStringFromCGRect([UIApplication sharedApplication].statusBarFrame));
-    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
-    self.tableView.backgroundColor = [UIColor orangeColor];
+    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     self.tableView.rowHeight = 50;
     self.tableView.dataSource = self;
