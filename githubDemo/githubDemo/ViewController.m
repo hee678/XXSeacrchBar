@@ -52,7 +52,7 @@
 
 - (void)clickLeftBarButton
 {
-    NSLog(@"%s",__func__);
+//    NSLog(@"%s",__func__);
 }
 
 - (void)didReceiveMemoryWarning {
