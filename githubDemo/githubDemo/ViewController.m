@@ -26,9 +26,10 @@
     NSLog(@"self.view = %@",NSStringFromCGRect(self.view.frame));
     NSLog(@"self.navigationBar = %@",NSStringFromCGRect(self.navigationController.navigationBar.frame));
     NSLog(@"statusBarFrame = %@",NSStringFromCGRect([UIApplication sharedApplication].statusBarFrame));
-    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     self.tableView.rowHeight = 50;
+    self.tableView.sectionHeaderHeight = 0;
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     [self.view addSubview:self.tableView];
